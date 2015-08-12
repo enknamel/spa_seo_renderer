@@ -34,7 +34,7 @@ module SpaSeoRenderer
           "Baiduspider",
           "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)",
           "Google"
-      ].detect { |ua| ua.index env["HTTP_USER_AGENT"] }
+      ].detect { |ua| env["HTTP_USER_AGENT"].index ua }
     end
 
     def is_renderable?(env)
