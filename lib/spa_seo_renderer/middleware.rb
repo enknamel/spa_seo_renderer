@@ -33,7 +33,8 @@ module SpaSeoRenderer
           "Mozilla/5.0 (compatible; Ask Jeeves/Teoma; +http://about.ask.com/en/docs/about/webmasters.shtml)",
           "Baiduspider",
           "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)",
-      ].include?(env["HTTP_USER_AGENT"])
+          "Google"
+      ].detect { |ua| ua.index env["HTTP_USER_AGENT"] }
     end
 
     def is_renderable?(env)
