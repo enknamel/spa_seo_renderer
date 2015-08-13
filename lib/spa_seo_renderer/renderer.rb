@@ -1,3 +1,6 @@
+require 'headless'
+require 'capybara-webkit'
+
 module SpaSeoRenderer
   class Renderer
 
