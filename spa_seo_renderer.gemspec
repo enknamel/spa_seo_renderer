@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
 
   spec.add_runtime_dependency 'capybara-webkit', '~> 1.6.0'
+  spec.add_runtime_dependency 'headless', '~> 2.2.0'
 end
